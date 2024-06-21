@@ -1,4 +1,4 @@
-# Gh_Analzye_Slope
+# Gh_Basic_Fluid_Sim
 
 ![](https://github.com/alitghomi/GH_Basic_Fluid_Sim/blob/main/Assets/flowSample.gif)
 
