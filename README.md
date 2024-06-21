@@ -1,40 +1,33 @@
 # Gh_Analzye_Slope
 
-![](https://github.com/alitghomi/Gh_Analyze_Slope/blob/main/Assets/analyze_slope.jpg)
+![](https://github.com/alitghomi/GH_Basic_Fluid_Sim/blob/main/Assets/flowSample.gif)
 
- This Grasshopper file gets a Brep geometry (with no overhangs) and analyzes the slopes of that geometry based on a grid of probs. It outputs the slope percentages as well as vector and mesh visualizations.
+This Grasshopper file does a basic fluid simulation on a given geometry based on gravitational direction (Default: 0,0,-1)
 
 ## How to use
 
 ### Inputs
-#### srf
-A NURBS surface to analyze. You can replace it with a Brep component
+#### Brep
+A Brep to generate the probe points on
 
-#### U_count
-Number of probe rows.
+#### Count
+Probe count.
 
-#### V_count
-Number of probe columns. 
+#### Factor
+The amount of movement in every frame. 
 
-#### Vis Distance From The Inpuy Surface
-The minimum edge length of the output surfaces. 
+#### Reset Button
+Resets the simulation. 
+
+#### Run
+Starts and stops the simulation. 
 
 ### Outputs
 
-#### Probe
-Probe points.
-
-#### Vec
-Slope direction at each probe.
-
-#### Slope Percentages
-Slope Percentages at each probe.
-
-#### Mesh
-Colored mesh based on the slope percentages
+#### CrvOut
+Curves representing the flows.
 
 ### Notes
-- It won't work with overhangs
-- It works with multiple geometeries.
-- All visualizations are adjustable
+- You can change the direction of gravity by changing FV vector of the load component
+
 
